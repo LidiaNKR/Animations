@@ -25,7 +25,7 @@ struct Animation {
         """
     }
     
-    //Генерируем рандомные значения для параментров анимации
+    ///Генерируем рандомные значения для параментров анимации
     static func getRandomAnimation() -> Animation {
         Animation(name: DataManager.shared.animations.randomElement()?.rawValue ?? "slideLeft",
                   curve: DataManager.shared.curves.randomElement()?.rawValue ?? "easeIn",

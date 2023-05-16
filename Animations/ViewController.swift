@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     // MARK: - IB Actions
     
-    //Настраиваем анимацию для ImageView, при нажатии на кнопку
+    ///Настраиваем анимацию для ImageView, при нажатии на кнопку
     @IBAction func animationButtonPressed(_ sender: UIButton) {
         animationLabel.text = animation.description
 
