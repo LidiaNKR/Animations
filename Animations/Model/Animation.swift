@@ -7,12 +7,14 @@
 
 struct Animation {
     
+    //Модель с параментрами анимации
     let name: String
     let curve: String
     let force: Float
     let duration: Float
     let delay: Float
     
+    //Выводим описание анимации с указанием ее значений
     var description: String {
         """
         preset: \(name)
@@ -23,6 +25,7 @@ struct Animation {
         """
     }
     
+    //Генерируем рандомные значения для параментров анимации
     static func getRandomAnimation() -> Animation {
         Animation(name: DataManager.shared.animations.randomElement()?.rawValue ?? "slideLeft",
                   curve: DataManager.shared.curves.randomElement()?.rawValue ?? "easeIn",

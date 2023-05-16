@@ -11,7 +11,10 @@ class DataManager {
     
     static let shared = DataManager()
     
+    //Присваиваем все названия анимаций, подписав исходное перечисление на CaseIterable
     let animations = Spring.AnimationPreset.allCases
+    
+    //Присваиваем все названия кривых, подписав исходное перечисление на CaseIterable
     let curves = Spring.AnimationCurve.allCases
     
     init () {}

@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     }
     
     // MARK: - IB Actions
+    
+    //Настраиваем анимацию для ImageView, при нажатии на кнопку
     @IBAction func animationButtonPressed(_ sender: UIButton) {
         animationLabel.text = animation.description
 
@@ -37,6 +39,8 @@ class ViewController: UIViewController {
         animationImageView.animate()
 
         animation = Animation.getRandomAnimation()
+        
+        //Устанавливаем для заголовка кнопки название анимации
         sender.setTitle("Run \(animation.name)", for: .normal)
 
     }
